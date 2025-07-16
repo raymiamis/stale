@@ -5,6 +5,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
 
 import java.util.Objects;
 
@@ -44,6 +45,9 @@ public class MainApp extends Application {
 
         primaryStage.setTitle("Stale");
         primaryStage.setScene(scene);
+        primaryStage.getIcons().add(
+                new Image(Objects.requireNonNull(getClass().getResource("/icon64.png")).toExternalForm())
+        );
         primaryStage.show();
     }
 
