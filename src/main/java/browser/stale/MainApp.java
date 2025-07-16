@@ -20,7 +20,8 @@ public class MainApp extends Application {
         plusTab = createPlusTab();
         tabPane.getTabs().add(plusTab);
 
-        addNewTab();
+        Tab firstTab = addNewTab();
+        tabPane.getSelectionModel().select(firstTab);
 
         tabPane.getSelectionModel().selectedItemProperty().addListener((obs, oldTab, newTab) -> {
             if (newTab == plusTab) {
