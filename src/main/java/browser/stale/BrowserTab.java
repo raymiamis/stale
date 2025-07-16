@@ -26,8 +26,6 @@ public class BrowserTab extends Tab {
 
         setContent(layout);
 
-        setOnClosed(e -> {
-            engine.load(null);
-        });
+        setOnClosed(e -> engine.load(null));
     }
 }
