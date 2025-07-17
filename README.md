@@ -8,9 +8,10 @@ Stale is a lightweight custom web browser built in Java using JavaFX. It support
 
 ## Features
 
-- Web content rendering with JavaFX WebView  
-- Multi-tab support  
-- Simple and clean UI 😂 (still under development)  
+- Web content rendering with JavaFX WebView
+- Shows the darkmode version of the website if available
+- Multi-tab support
+- Simple & dark UI
 
 ---
 
