@@ -1,6 +1,7 @@
 package browser.stale;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
@@ -21,8 +22,10 @@ public class MainApp extends Application {
         plusTab = createPlusTab();
         tabPane.getTabs().add(plusTab);
 
-        Tab firstTab = addNewTab();
-        tabPane.getSelectionModel().select(firstTab);
+        Platform.runLater(() -> {
+            Tab firstTab = addNewTab();
+            tabPane.getSelectionModel().select(firstTab);
+        });
 
         tabPane.getSelectionModel().selectedItemProperty().addListener((obs, oldTab, newTab) -> {
             if (newTab == plusTab) {

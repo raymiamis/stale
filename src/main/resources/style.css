@@ -72,3 +72,36 @@
     -fx-border-color: #1e1e1e;
     -fx-border-width: 0 0 1 0;
 }
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar:vertical .track, .scroll-bar:horizontal .track {
+    -fx-background-color: #333; /* dunkler Hintergrund */
+    -fx-background-insets: 0;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar:vertical .thumb, .scroll-bar:horizontal .thumb {
+    -fx-background-color: #555;
+    -fx-background-insets: 1;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar:vertical .thumb:hover, .scroll-bar:horizontal .thumb:hover {
+    -fx-background-color: #888;
+}
+
+.scroll-bar:vertical {
+    -fx-pref-width: 12px;
+}
+
+.scroll-bar:horizontal {
+    -fx-pref-height: 12px;
+}
