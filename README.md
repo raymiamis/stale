@@ -2,7 +2,7 @@
 
 **Status:** Work In Progress 🚧
 
-Stale is a lightweight custom web browser built in Java using JavaFX. It supports basic web content rendering and multiple tabs.
+Stale is a lightweight custom web browser built in Java using JavaFX with Maven. It supports basic web content rendering and multiple tabs.
 
 ---
 
